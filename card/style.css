@@ -1,0 +1,144 @@
+*::before,
+*::after,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --primary-main-background: hsl(233, 47%, 7%);
+    --primary-card-background: hsl(244, 38%, 16%);
+    --primary-accent: hsl(277, 64%, 61%);
+
+    --neutral-main-heading: hsl(0, 0%, 100%);
+    --neutral-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --neutral-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    background-color: var(--primary-main-background);
+    width: 100%;
+    height: 100vh;
+    padding: 10em 6em;
+    font-size: 15px;
+    color: var(--neutral-main-paragraph);
+}
+
+.container{
+    background-color: var(--primary-card-background);
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column-reverse;
+    }
+}
+
+/* left-side */
+
+.left-side{
+    width: 50%;
+    flex: 1;
+    padding: 4em 1em 2em 4em;
+}
+
+@media (max-width: 900px){
+    .left-side{
+        width: 100%;
+        text-align: center;
+        padding: 4em 3em;
+    }
+}
+
+.left-side header{
+    color: var(--neutral-main-heading);
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.left-side h1{
+    font-size: 2.2rem;
+}
+
+.insights{
+    color:var(--primary-accent)
+}
+
+.lmain{
+    width: 80%;
+    line-height: 1.6rem;
+}
+
+@media (max-width: 900px){
+    .left-side header{
+        width: 100%;
+    }
+
+    .lmain{
+        width: 100%;
+    }
+}
+
+.lmain > * + * {
+    margin-top: 2rem;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.small-info{
+    margin-top: 2rem;
+}
+@media (max-width: 900px){
+    .section2{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }    
+}
+
+.section2 h2{
+    color:var(--neutral-main-heading);
+}
+
+.section2 p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* right-side */
+
+.right-side{
+    width: 50%;
+    height: auto;
+    background-color: var(--primary-accent);
+    flex: 1;
+}
+
+@media (max-width: 900px){
+    .right-side{
+        width: 100%;
+    }
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    opacity: 0.5;
+}

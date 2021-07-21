@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Danny's Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Works</a></li>
+                    <li><a href="#contacts" onclick="moveFunction">Contacts</a></li>
+                </ul>
+            </nav>
+    
+            <a href="#" class="toggle-buttons">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        
+            <div class="overview" id="overview">
+                <h1>Hi, I am Daniel =)</h1>
+            </div>
+        </header>
+    
+        <main>
+            <div class="about" id="about">
+                <h2>About</h2>
+                <p>My name is Petcov Daniel, I am 18 years old and I am a WebDesigner and Developer.</p>
+                <p>My primordial goal is to make the internet a better place!</p>
+                <p>Coding was initially a hobby for me, but with the time I started to love it more and more, until I decided
+                to turn it into my real job.</p>
+                <p>That fantastic world of programming is new for me, but I do my best to learn everything I need to be a good coding man
+                that doesn't know what's sleep :)</p>
+            </div>
+    
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="projects-columns">
+                    <div class="pr-col">
+                        <h3>Grid-Section</h3>
+                        <a href="grid-section/index.html" target="_blank"><img src="images/grid-section.png" alt="image with a grid section web"></a>
+                    </div>
+                    <div class="pr-col">
+                        <h3>Card</h3>
+                        <a href="card/index.html" target="_blank"><img src="images/card.png" alt="image with a card web"></a>
+                    </div>
+                    <div class="pr-col bot">
+                        <h3>Traffic-Pricing</h3>
+                        <a href="traffic-pricing/index.html" target="_blank"><img src="images/traffic-pricing.png" alt="image with a traffic pricing web"></a>
+                    </div>
+                    <div class="pr-col bot">
+                        <h3>Column-Cards</h3>
+                        <a href="column-card/index.html" target="_blank"><img src="images/column-card.png" alt="image with a column card web"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer id="contacts">
+            <p>Feel free to contact me on that email: <span>danielpetcov.144@gmail.com.</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
